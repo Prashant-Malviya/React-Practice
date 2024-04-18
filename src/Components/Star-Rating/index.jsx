@@ -26,7 +26,7 @@ function StarRating({noOfStars}) {
     <div className='flex flex-row justify-center items-center'>
     {  
         [...Array(noOfStars)].map((_,index)=>{
-            
+             
             index += 1;
 
         return <FaStar
