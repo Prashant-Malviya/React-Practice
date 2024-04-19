@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
+import QRCodeGenerator from './Components/QR Code Generator'
 // import LoadMoreData from './Components/Load More Data/LoadMoreData'
-import TreeView from './Components/Tree-View'
-import menus from './Components/Tree-View/data'
+// import TreeView from './Components/Tree-View'
+// import menus from './Components/Tree-View/data'
 // import ImageSlider from './Components/Image-Slider'
 // import Accordian from './Components/Accordion'
 // import RandomColor from './Components/Random Color'
@@ -26,7 +27,10 @@ function App() {
 
     {/* Tree View Component/ Menu UI Component / recursive navigation menu */}
 
-    <TreeView menus={menus} />
+    {/* <TreeView menus={menus} /> */}
+
+    {/* QR Generator */}
+    <QRCodeGenerator />
 
     </div>
   )
