@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export default function LoadMoreData() {
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   const [disableButton, setDisableButton] = useState(false);
 
   async function fetchProducts() {
@@ -21,8 +21,8 @@ export default function LoadMoreData() {
 
       if (
         responseData &&
-        responseData.products &&
-        responseData.products.length
+        responseData?.products &&
+        responseData?.products?.length
       ) {
         setProducts((prevData) => [...prevData, ...responseData.products]);
         setLoading(false);
@@ -64,7 +64,7 @@ export default function LoadMoreData() {
         <div>
           <button
           disabled={disableButton}
-            className={`${disableButton ? "bg-gray-400" : "bg-blue-500"} px-3 py-3 m-3 bg-blue-600 rounded-md text-white flex justify-center items-center`}
+            className={`${disableButton ? "bg-gray-400" : "bg-blue-500"} px-3 py-3 m-3 rounded-md text-white flex justify-center items-center`}
 
             
             onClick={() => setCount(count + 1)}

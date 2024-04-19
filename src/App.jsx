@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import LoadMoreData from './Components/Load More Data/LoadMoreData'
+// import LoadMoreData from './Components/Load More Data/LoadMoreData'
+import TreeView from './Components/Tree-View'
+import menus from './Components/Tree-View/data'
 // import ImageSlider from './Components/Image-Slider'
 // import Accordian from './Components/Accordion'
 // import RandomColor from './Components/Random Color'
@@ -20,7 +22,11 @@ function App() {
 
     {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit={"10"} page={'1'} /> */}
 
-    <LoadMoreData />
+    {/* <LoadMoreData /> */}
+
+    {/* Tree View Component/ Menu UI Component / recursive navigation menu */}
+
+    <TreeView menus={menus} />
 
     </div>
   )
