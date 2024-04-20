@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import QRCodeGenerator from './Components/QR Code Generator'
+import LightAndDarkMode from './Components/Light-Dark-Mode'
+import ScrollIndicator from './Components/Scroll-Indicator'
+// import QRCodeGenerator from './Components/QR Code Generator'
 // import LoadMoreData from './Components/Load More Data/LoadMoreData'
 // import TreeView from './Components/Tree-View'
 // import menus from './Components/Tree-View/data'
@@ -30,7 +32,16 @@ function App() {
     {/* <TreeView menus={menus} /> */}
 
     {/* QR Generator */}
-    <QRCodeGenerator />
+    {/* <QRCodeGenerator /> */}
+
+
+    {/* light and dark mode theme */}
+
+    {/* <LightAndDarkMode /> */}
+
+    {/* Scroll Indiactor */}
+
+      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
 
     </div>
   )
