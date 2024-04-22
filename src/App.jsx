@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import LightAndDarkMode from './Components/Light-Dark-Mode'
-import ScrollIndicator from './Components/Scroll-Indicator'
+import GithubProfileFinder from './Components/Github Profile Finder'
+import ModalTest from './Components/Custom-Modal-Popup/ModalTest'
+import TabTest from './Components/Custome-Tabs/TabTest'
+// import LightAndDarkMode from './Components/Light-Dark-Mode'
+// import ScrollIndicator from './Components/Scroll-Indicator'
 // import QRCodeGenerator from './Components/QR Code Generator'
 // import LoadMoreData from './Components/Load More Data/LoadMoreData'
 // import TreeView from './Components/Tree-View'
@@ -41,7 +44,16 @@ function App() {
 
     {/* Scroll Indiactor */}
 
-      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
+      {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
+
+      {/* Custome Tab Component  */}
+      <TabTest />
+
+      {/* Custome Modal Component  */}
+      <ModalTest />
+
+      {/* Github Profile Viewer  */}
+      <GithubProfileFinder />
 
     </div>
   )
