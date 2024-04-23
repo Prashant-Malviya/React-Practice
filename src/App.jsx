@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import GithubProfileFinder from './Components/Github Profile Finder'
-import ModalTest from './Components/Custom-Modal-Popup/ModalTest'
-import TabTest from './Components/Custome-Tabs/TabTest'
+import TicTacToe from './Components/Tic-Tac-Toe/Index'
+import SearchAutoComplete from './Components/Search-Autocomplete'
+// import GithubProfileFinder from './Components/Github Profile Finder'
+// import ModalTest from './Components/Custom-Modal-Popup/ModalTest'
+// import TabTest from './Components/Custome-Tabs/TabTest'
 // import LightAndDarkMode from './Components/Light-Dark-Mode'
 // import ScrollIndicator from './Components/Scroll-Indicator'
 // import QRCodeGenerator from './Components/QR Code Generator'
@@ -47,13 +49,19 @@ function App() {
       {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
 
       {/* Custome Tab Component  */}
-      <TabTest />
+      {/* <TabTest /> */}
 
       {/* Custome Modal Component  */}
-      <ModalTest />
+      {/* <ModalTest /> */}
 
       {/* Github Profile Viewer  */}
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
+
+      {/* search autocomplete  */}
+      <SearchAutoComplete />
+
+      {/* tic-tac-toe  */}
+      <TicTacToe />
 
     </div>
   )
