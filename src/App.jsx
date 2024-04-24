@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import TicTacToe from './Components/Tic-Tac-Toe/Index'
-import SearchAutoComplete from './Components/Search-Autocomplete'
+import FeatureFlagGlobalState from './Components/Feature-Flag/Context/Index'
+import FeatureFlags from './Components/Feature-Flag/Index'
+// import TicTacToe from './Components/Tic-Tac-Toe/Index'
+// import SearchAutoComplete from './Components/Search-Autocomplete'
 // import GithubProfileFinder from './Components/Github Profile Finder'
 // import ModalTest from './Components/Custom-Modal-Popup/ModalTest'
 // import TabTest from './Components/Custome-Tabs/TabTest'
@@ -58,10 +60,15 @@ function App() {
       {/* <GithubProfileFinder /> */}
 
       {/* search autocomplete  */}
-      <SearchAutoComplete />
+      {/* <SearchAutoComplete /> */}
 
       {/* tic-tac-toe  */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+
+      {/* Feature Flag Implementation */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
 
     </div>
   )
